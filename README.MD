@@ -4,8 +4,10 @@ I've recently bought the Wallpaper Engine and it bugged me that I can't do much 
 Any content that you download from the Steam Workshop belongs to it's respective owners. Do not by any means use this tool to redistribute any content that you do not own or do not have rights to redistribute in any way. I as the creator of the tool am not responsible for any illegal usage of this tool. Just, please, do what you think is right.
 # Building
 ## Windows
-*ugh* MinGW didn't do the job. If you have a way to build it, feel free to create an issue!<br>
-~~You can also use WCL~~
+* Open the Visual stuido project, then go to project properties
+* Change platform toolset to v141 (2017)
+* In C/C++ -> General, add/set the directory to the root for Boost in Additional Include Directories.
+* Then in Linker -> General, add/set Additional Libraries Directories for the compiled boost libraries. Note you will need vc141 libraires compiled 
 ## Linux
 *Or Windows with WCL*<br>
 libraries required:<br>
