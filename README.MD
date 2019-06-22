@@ -4,10 +4,17 @@ I've recently bought the Wallpaper Engine and it bugged me that I can't do much 
 Any content that you download from the Steam Workshop belongs to it's respective owners. Do not by any means use this tool to redistribute any content that you do not own or do not have rights to redistribute in any way. I as the creator of the tool am not responsible for any illegal usage of this tool. Just, please, do what you think is right.
 # Building
 ## Windows
+<b>Dependancies</b>
+* Download Boost library from the website version 1.70.0.
+* Run bootstrap.bat from the extraction
+* Run b2.exe, this will take awhile
+* Run bjam.exe
+
+<b>Project setup</b>
 * Open the Visual stuido project, then go to project properties
 * Change platform toolset to v141 (2017)
 * In C/C++ -> General, add/set the directory to the root for Boost in Additional Include Directories.
-* Then in Linker -> General, add/set Additional Libraries Directories for the compiled boost libraries. Note you will need vc141 libraires compiled 
+* Then in Linker -> General, add/set Additional Libraries Directories for the compiled boost libraries, this will be in stage/lib from the dependancies section. Note you will need vc141 libraires compiled 
 ## Linux
 *Or Windows with WCL*<br>
 libraries required:<br>
